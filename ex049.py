@@ -1,3 +1,5 @@
+# pythonexercios
+# Exercício 49 – Tabuada v.2.0.
 n1 = int(input('Digite um número: '))
 n2 = 1
 print('A Tabuada para o numero {} é:'.format(n1))
