@@ -1,3 +1,5 @@
+# pythonexercios
+# Exercício 51 – Progressão Aritmética
 primeiro = int(input("Primeiro elemento: "))
 razao = int(input("Razao: "))
 n = 10
