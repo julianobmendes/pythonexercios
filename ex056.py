@@ -9,4 +9,12 @@ nome = []
 idade = []
 sexo = []
 for c in range (0, 4):
-    
+    nom = str(input('Digite o nome da {}º pessoa: '.format(c+1))).strip()
+    nome.append(nom)
+    idad = str(input('Digite a idade da {}º pessoa: '.format(c+1))).strip()
+    idade.append(idad)
+    print('Digite o sexo da {}º pessoa: '.format(c+1))
+    print('[M] para Masculino e [F] para Feminino')
+    sex = str(input('Digite o sexo da {}º pessoa: '.format(c+1))).strip()
+    sexo.append(sex)
+print(nome[0])   
