@@ -1,3 +1,7 @@
+# pythonexercios
+# Exercício 45 – GAME: Pedra Papel e Tesoura
+'''Crie um programa que faça o computador jogar Jokenpô com você.
+'''
 from random import randint
 num01 = randint(0, 2)
 lista = ['papel', 'pedra', 'tesoura']
