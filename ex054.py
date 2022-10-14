@@ -1,5 +1,5 @@
 # pythonexercios
-# conferencia de maior idade.
+# Exercício 54 – Grupo da Maioridade
 from datetime import date
 maior = []
 menor = []
