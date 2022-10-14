@@ -1,4 +1,5 @@
-# conferencia de um poligramo
+# pythonexercios
+# Exercício 53 – Detector de Palíndromo
 plvr = str(input('Digite uma palavra: ').upper().replace(' ',''))
   if plvr == plvr[:: -1]:
     print('A palavra é Palindroma','\n')
