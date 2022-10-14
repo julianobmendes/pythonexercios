@@ -1,5 +1,7 @@
 # pythonexercios
 # Exercício 52 – Números primos
+'''Faça um programa que leia um número inteiro
+e diga se ele é ou não um número prim'''
 num = int(input("Verificar numeros primos ate: "))
 mult = 0
 for count in range(2, num):
