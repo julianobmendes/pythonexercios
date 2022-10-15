@@ -14,4 +14,5 @@ for c in range(0, 4):
         maior.append(idade)
     else:
         menor.append(idade)
-print('A {} pessoa com idade maior a 21 anos esta são {}'.format(len(maior), maior))
+print('A {} pessoa com idade maior a 21 anos esta são {}'.format(len(maior), maior[0:len(maior)]))
+print('A {} pessoa com idade menor a 21 anos esta são {}'.format(len(menor), menor))
