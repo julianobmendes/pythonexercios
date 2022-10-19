@@ -6,7 +6,7 @@ e quantas já são maiores.'''
 from datetime import date
 maior = []
 menor = []
-for c in range(0, 4):
+for c in range(0, 7):
     nasc = int(input('Digite o seu ano de nascimento: '))
     ano = date.today().year
     idade = ano - nasc
