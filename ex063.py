@@ -7,26 +7,33 @@ Exemplo: 0 – 1 – 1 – 2 – 3 – 5 – 8
 """
 num = int(input('Digite um número inteiro para a Sequência Fibonacci: '))
 cont = int(input('Digite quantos números da Sequência Fibonacci deseja ver: '))
-var = 2
+var = 1
 ant = 0
+print('')
 if num == 0:
     num = 1
-    print('0 - 1', end="")
     while var != cont:
+        res = var % 2
+        if var == 1:
+            print(' {}'.format(ant), end="")
+            num += ant
+        if res == 0:
+            print(' - {}'.format(ant), end="")
+            num += ant
+        if res == 1:
+            print(' - {}'.format(num), end="")
+            ant += num
         var += 1
-        ant = num + ant
-        #print(ant)
-        print(' - {}'.format(ant), end="")
-        #ant = num
-        num = ant + num
-        #print(num)
 elif num != 0:
-    var = 1
-    print(num, end="")
     while var != cont:
+        res = var % 2
+        if var == 1:
+            print(' {}'.format(num), end="")
+            ant += num
+        if res == 0:
+            print(' - {}'.format(num), end="")
+            ant += num
+        if res == 1:
+            print(' - {}'.format(ant), end="")
+            num += ant
         var += 1
-        ant = num
-        num = num + ant
-        print(' - {}'.format(num), end="")
-        #prox = num
-        #num = num + prox
