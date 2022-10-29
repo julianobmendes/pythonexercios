@@ -1,3 +1,8 @@
+# pythonexercios
+# Exercício 9 – Tabuada
+"""
+Faça um programa que leia um número Inteiro qualquer e mostre na tela a sua tabuada.
+"""
 n1 = int(input('Digete um numero inteiro: '))
 n2 = 0
 print('A Tabuada para o numero {} é:'.format(n1))
