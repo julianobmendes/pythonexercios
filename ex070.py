@@ -7,3 +7,25 @@ A) qual é o total gasto na compra.
 B) quantos produtos custam mais de R$1000.
 C) qual é o nome do produto mais barato.
 """
+prod = []
+preco = []
+p_maior = 0
+p_menor = [0, 0]
+while 1 != 2:
+    i_prod = str(input('Qual o nome do produto: '))
+    prod.append(i_prod)
+    i_preco = float(input('Qual é o valor da mercadoria: '))
+    preco.append(i_preco)
+    if i_preco >= 1000:
+        p_maior += 1
+    if i_preco < p_menor[1]:
+        p_menor.insert(0, i_prod)
+        p_menor.insert(1, i_preco)
+    print('')
+    c = str(input('Deseja continuar? S/N')).upper()
+    if c == 'N':
+        break
+print('Você teve um tota de gasto de R$ {:.2}'.format(sum(preco)))
+print('Dos produtos {} custaram mais de R$ 1000,00'.format(p_maior))
+print('E o produto mais barato foi {}, que custou R$ {}'.format(p_menor[0], p_menor[1]))
+print('fim programa!')
