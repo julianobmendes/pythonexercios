@@ -5,3 +5,40 @@ Crie um programa que leia dois valores e mostre um menu na tela:
 [ 1 ] somar [ 2 ] multiplicar [ 3 ] maior [ 4 ] novos números [ 5 ] sair do programa
 Seu programa deverá realizar a operação solicitada em cada caso.
 """
+from time import sleep
+num01 = 0
+num02 = 0
+result = 0
+control = 0
+while control != 'sair':
+    num01 = int(input('Digite o 1º número: '))
+    num02 = int(input('Digite o 2º número: '))
+    print('---=== Menu ===---')
+    print('[ 1 ] - Somar')
+    print('[ 2 ] - Multiplicar')
+    print('[ 3 ] - Maior')
+    print('[ 4 ] - Redigitar novos números')
+    print('[ 5 ] - Sair')
+    control = int(input(''))
+    if (control!=1) and (control!=2) and (control!=3) and (control!=4) and (control!=5) :
+        print('Você digitou uma opção inválida!!!\n')
+    if control == 1:
+        result = num01 + num02
+        print('A soma de {}+{} é {}.\n'.format(num01, num02, result))
+        sleep(3)
+    if control == 2:
+        result = num01 * num02
+        print('A multiplicação de {}x{} é de {}.\n'.format(num01, num02, result))
+        sleep(3)
+    if control == 3:
+        if num01 > num02:
+            print('O valor {} é maior que {}.\n'.format(num01, num02))
+            sleep(3)
+        if num02 > num01:
+            print('O valor {} é maior que {}.\n'.format(num02, num01))
+            sleep(3)
+    if control == 4:
+        print('\n')
+    if control == 5:
+        control = 'sair'
+print('Fim do Programa!')

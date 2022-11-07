@@ -1,4 +1,12 @@
-
+# pythonexercios
+# Exercício 42 – Analisando Triângulos v2.0
+"""
+Refaça o DESAFIO 35 dos triângulos, acrescentando o
+recurso de mostrar que tipo de triângulo será formado:
+EQUILÁTERO: todos os lados iguais
+ISÓSCELES: dois lados iguais, um diferente
+ESCALENO: todos os lados diferentes
+"""
 print('_-_'*14)
 print('Vamos analizar a formacao de um triangulo.')
 print('_-_'*14)
