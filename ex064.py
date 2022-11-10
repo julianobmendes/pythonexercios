@@ -18,6 +18,4 @@ while var != 999:
         break
 print('')
 print('Você digitou {} vezes até o resultado final.'.format(len(cont)))
-print('O valor mínimo foi  de {}.'.format(min(cont)))
-print('O valor maxímo foi de {}.'.format(max(cont)))
 print('E a soma de todos os valores é {}'.format(sum(cont)))
