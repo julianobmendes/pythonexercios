@@ -14,18 +14,8 @@ while var != 999:
     if resp != 999:
         cont.append(resp)
         resp02 = 0
-        while resp02 != 999:
-            resp02 = str(input('Deseja continuar? S/N')).upper()
-            if resp02 == 'S':
-                resp02 = 999
-                continue
-            if resp02 == 'N':
-                resp02 = 999
-                var = 999
-                continue
-            if resp02 != ('S') and resp02 != ('N'):
-                resp02 = 666
-                print('Você digitou um valor errado!')
+    if resp == 999:
+        break
 print('')
 print('Você digitou {} vezes até o resultado final.'.format(len(cont)))
 print('O valor mínimo foi  de {}.'.format(min(cont)))
