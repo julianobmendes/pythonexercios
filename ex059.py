@@ -22,18 +22,15 @@ while control != 'sair':
         print('Você digitou uma opção inválida!!!\n')
     if control == 1:
         result = num01 + num02
-        print('A soma de {}+{} é {}.\n'.format(num01, num02, result))
-        control = 4
+        print('A soma de {} + {} é {}.\n'.format(num01, num02, result))
     if control == 2:
         result = num01 * num02
-        print('A multiplicação de {}x{} é de {}.\n'.format(num01, num02, result))
-        control = 4
+        print('A multiplicação de {} x {} é de {}.\n'.format(num01, num02, result))
     if control == 3:
         if num01 > num02:
             print('O valor {} é maior que {}.\n'.format(num01, num02))
         if num02 > num01:
             print('O valor {} é maior que {}.\n'.format(num02, num01))
-        control = 4
     if control == 4:
         num01 = int(input('Digite o 1º número: '))
         num02 = int(input('Digite o 2º número: '))
