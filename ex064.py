@@ -1,10 +1,10 @@
 # pythonexercios
-# Exercício 65 – Maior e Menor valores
+# Exercício 64 – Tratando vários valores v1.0
 """
 Crie um programa que leia vários números inteiros pelo teclado.
-No final da execução, mostre a média entre todos os valores e
-qual foi o maior e o menor valores lidos.
-O programa deve perguntar ao usuário se ele quer ou não continuar a digitar valores.
+O programa só vai parar quando o usuário digitar o valor 999,
+que é a condição de parada. No final, mostre quantos números
+foram digitados e qual foi a soma entre eles (desconsiderando o flag).
 """
 cont = []
 var = 0
