@@ -14,8 +14,11 @@ for c in range(0, 4):
     game[f'jogador 0{c+1}'] = int(randint(1, 6))
 for k, v in game.items():
     print(f'O {k} tirou {v}')
+    sleep(2)
+sleep(1)
 print('Ranking de Jogadores:')
 c = 1
 for i in sorted(game, key = game.get, reverse=True):
+    sleep(2)
     print(f'{c}º lugar o {i} com {game[i]}')
     c += 1
