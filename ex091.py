@@ -15,7 +15,7 @@ for c in range(0, 4):
 for k, v in game.items():
     print(f'O {k} tirou {v}')
     sleep(2)
-sleep(1)
+sleep(2)
 print('Ranking de Jogadores:')
 c = 1
 for i in sorted(game, key = game.get, reverse=True):
