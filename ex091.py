@@ -6,3 +6,16 @@ resultados aleatórios. Guarde esses resultados em um
 dicionário em Python. No final, coloque esse dicionário
 em ordem, sabendo que o vencedor tirou o maior número no dado.
 """
+from random import randint
+from time import sleep
+game = dict()
+print('Valores sorteados:')
+for c in range(0, 4):
+    game[f'jogador 0{c+1}'] = int(randint(1, 6))
+for k, v in game.items():
+    print(f'O {k} tirou {v}')
+print('Ranking de Jogadores:')
+c = 1
+for i in sorted(game, key = game.get, reverse=True):
+    print(f'{c}º lugar o {i} com {game[i]}')
+    c += 1
