@@ -28,10 +28,22 @@ while True:
     idade = int(input('Idade: '))
     total_idade.append(idade)
     lista.append({'nome': nome, 'sexo': sexo, 'idade': idade})
-    resp = str(input('--== Continuar? [S/N]')).upper()
+    while True:
+        resp = str(input('--== Continuar? [S/N]')).upper()[0]
+        if resp in 'SN':
+            break
+        print('ERRO!!!    Resposta: S ou N')
     if resp == 'N':
         break
 print(f'O grupo de pesquisa tem {len(lista)} pessoas.')
-print(f'A média de idade do grupo é {sum(total_idade) / len(lista)} anos')
-
-print(lista)
+print(f'A média de idade do grupo é {sum(total_idade) / len(lista):.2f} anos')
+print('As mulheres que foram cadastradas são:')
+for c in lista:
+    if c['sexo'] == 'Feminino':
+        print(f'- {c["nome"]}')
+print('As pessoas mais velhas cadastradas são:')
+for c in lista:
+    if c['idade'] >= (sum(total_idade) / len(lista)):
+        for k, v in c.items():
+            print(f'{k} = {v}   ', end="")
+        print('')
