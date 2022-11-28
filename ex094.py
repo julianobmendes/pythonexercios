@@ -11,6 +11,7 @@ C) Uma lista com as mulheres
 D) Uma lista de pessoas com idade acima da média
 """
 lista = list()
+total_idade = list()
 while True:
     nome = str(input('Nome: '))
     test = 0
@@ -25,10 +26,12 @@ while True:
         else:
             print('Você selecionou um sexo errado!!!')
     idade = int(input('Idade: '))
+    total_idade.append(idade)
     lista.append({'nome': nome, 'sexo': sexo, 'idade': idade})
     resp = str(input('--== Continuar? [S/N]')).upper()
     if resp == 'N':
         break
 print(f'O grupo de pesquisa tem {len(lista)} pessoas.')
-print(sum(lista))
+print(f'A média de idade do grupo é {sum(total_idade) / len(lista)} anos')
+
 print(lista)
