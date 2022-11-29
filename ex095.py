@@ -22,10 +22,18 @@ while True:
         if resp in 'SN':
             break
         print('Errou!!! - resposta ( S ou N )')
-        print('')
+        print()
     if resp == 'N':
         break
 print('-='*20)
-print('{:4} {:15} {:15} {}'.format('Cod.', 'Nome', 'Gols', 'Total'))
-for c in lista:
-    print(f'{c+1:4} {c["nome"]:15} {c["gols"]:15} {c["total"]}')
+print('Cod.', end="")
+for c in jogador.keys():
+    print(f'{c:<15}', end="")
+print()
+print('-'*40)
+for k, v in enumerate(lista):
+    print(f'{k:>3}', end="")
+    for c in v.values():
+        print(f'{str(c):<15}', end="")
+    print()
+print('-='*20)
