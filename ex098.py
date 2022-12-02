@@ -8,17 +8,20 @@ a) de 1 até 10, de 1 em 1
 b) de 10 até 0, de 2 em 2
 c) uma contagem personalizada
 """
+from time import sleep
 def contador(a, b, c):
     print('-='*16)
     if a < b:
         print(f'Contagem de {a} até {b} de {c} em {c}')
         for c in range(a, b+1, c):
             print(f'{c} ',end="")
+            sleep(1)
         print()
     if a > b:
         print(f'Contagem de {a} até {b} de {c} em {c}')
         for c in range(a, b-1, -c):
             print(f'{c} ', end="")
+            sleep(1)
         print()
     print('-='*16)
     
