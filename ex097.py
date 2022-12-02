@@ -11,3 +11,12 @@ Saída:
  Olá, Mundo!
 ~~~~~~~~~
 """
+def escreva(txt):
+    print(f'≈'*(len(txt)+8))
+    print(f'    {txt}')
+    print(f'≈'*(len(txt)+8))
+
+
+escreva('Gustavo Guanabara')
+escreva('Curso em Vídeo no Youtube')
+escreva('CeV')
