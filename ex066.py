@@ -10,7 +10,7 @@ qual foi a soma entre elas (desconsiderando o flag).
 cont = []
 var = 0
 print('Digite um valor inteiro para soma,\nQuando quiser para digite 999\n')
-while var != 999:
+while True:
     resp = int(input('Digite um número: '))
     if resp != 999:
         cont.append(resp)

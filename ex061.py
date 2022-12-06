@@ -9,5 +9,8 @@ razao = int(input("Razao: "))
 n = 0
 while n != 10:
     n += 1
-    print(primeiro)
+    if n != 10:
+        print('{} ➜ '.format(primeiro), end="")
+    else:
+        print('{}'.format(primeiro), end="")
     primeiro = primeiro + razao
