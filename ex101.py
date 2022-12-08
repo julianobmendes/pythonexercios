@@ -7,14 +7,23 @@ retornando um valor literal indicando se uma pessoa tem voto
 NEGADO, OPCIONAL e OBRIGATÓRIO nas eleições.
 """
 from datetime import date
+from typing import Union, Any
+
+
 def voto(ano):
-    idade = (date.today().year - ano)
+    """
+    ==> Identifica baseado na idade se pode ou não votar
+    :param ano: recebe idade
+    :return: sem retorno
+    by Juliano Boaventura Mendes
+    """
+    idade = date.today().year - ano
     print(f'Com {idade} anos: ', end="")
     if idade >= 65:
         print('Voto OPCIONAL')
-    if idade >= 18 and idade <= 64:
+    if idade >= 18 <= 64:
         print('Voto OBRIGATÓRIO')
-    if idade >= 16 and idade <= 17:
+    if idade >= 16 <= 17:
         print('Voto OPCIONAL')
     if idade <= 15:
         print('Voto NEGADO')
