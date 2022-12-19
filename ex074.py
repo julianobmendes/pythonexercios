@@ -8,11 +8,9 @@ e o maior valor que estão na tupla.
 """
 from random import randint
 num = (randint(1,1000), randint(1,1000), randint(1,1000), randint(1,1000), randint(1,1000))
-c = 0
 print(('Os números sorteados foram'), end="")
-while c != len(num):
-    print((f', {num[c]}'), end="")
-    c += 1
+for c in num:
+    print((f', {c}'), end="")
 print('.')
 print(f'O maior número foi {max(num)}.')
 print(f'O menor número foi {min(num)}.')
