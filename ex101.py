@@ -7,7 +7,6 @@ retornando um valor literal indicando se uma pessoa tem voto
 NEGADO, OPCIONAL e OBRIGATÓRIO nas eleições.
 """
 from datetime import date
-from typing import Union, Any
 
 
 def voto(ano):

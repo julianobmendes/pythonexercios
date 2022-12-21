@@ -14,6 +14,7 @@ def ficha(nom='<Desconhecido>', gol=0):
 
     :param gol: quntidade de gols no campionato
     :type nom: nome do jogador
+    by Juliano Boaventura Mendes
     """
     print(f'O jogador {nom} fez {gol} gols no campeonato.')
 
