@@ -11,7 +11,7 @@ prod = []
 preco = []
 p_maior = 0
 p_menor = [0, 0]
-while 1 != 2:
+while True:
     i_prod = str(input('Qual o nome do produto: '))
     prod.append(i_prod)
     i_preco = float(input('Qual é o valor da mercadoria: '))

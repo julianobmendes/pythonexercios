@@ -7,7 +7,7 @@ O programa encerrará quando ele disser que quer mostrar 0 termos.
 n = 10
 while n != 0:
     print('Você deseja fazer uma Progressão Aritmética')
-    n = str(input('[ S ] para SIM \n[ N ] para NÃO')).upper()
+    n = str(input('[ S ] para SIM \n[ N ] para NÃO\n')).upper()
     if n == 'S':
         n = 10
     elif n == 'N':

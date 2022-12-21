@@ -7,8 +7,7 @@ que é a condição de parada. No final, mostre quantos números
 foram digitados e qual foi a soma entre eles (desconsiderando o flag).
 """
 cont = []
-var = 0
-resp02 = 0
+var = resp02 = 0
 while var != 999:
     resp = int(input('Digite um número: '))
     if resp != 999:

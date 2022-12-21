@@ -7,7 +7,7 @@ mostrando o total de vitórias consecutivas que ele conquistou no final do jogo.
 """
 from random import randint
 cont = 0
-winner = ['Par','Ímpar']
+winner = ['Par', 'Ímpar']
 print('Vamos jogar par ou ímpar!\n[ 1 ] - Ímpar\n[ 2 ] - Par')
 while cont != 999:
     num = int(input('Escolha sua sorte: '))

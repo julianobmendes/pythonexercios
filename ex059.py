@@ -9,8 +9,6 @@ num01 = num02 = result = control = 0
 num01 = int(input('Digite o 1º número: '))
 num02 = int(input('Digite o 2º número: '))
 while control != 'sair':
-    #num01 = int(input('Digite o 1º número: '))
-    #num02 = int(input('Digite o 2º número: '))
     print('---=== Menu ===---')
     print('[ 1 ] - Somar')
     print('[ 2 ] - Multiplicar')
@@ -18,7 +16,7 @@ while control != 'sair':
     print('[ 4 ] - Redigitar novos números')
     print('[ 5 ] - Sair')
     control = int(input(''))
-    if (control!=1) and (control!=2) and (control!=3) and (control!=4) and (control!=5) :
+    if (control != 1) and (control != 2) and (control != 3) and (control != 4) and (control != 5):
         print('Você digitou uma opção inválida!!!\n')
     if control == 1:
         result = num01 + num02

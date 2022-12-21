@@ -13,18 +13,16 @@ sexo = []
 c = 0
 men = 0
 womam = 0
-while 1 != 2:
+while True:
     i_sexo = str(input('Digite o sexo.\n[ M ] - masculino\n[ F ] - feminino\n')).upper()
     sexo.append(i_sexo)
     i_idade = int(input('Qual é a idade da pessoa: '))
     idade.append(i_idade)
-    c = str(input('Você deseja continuar. S/N')).upper()
-    if c == 'S':
-        print('')
-        continue
-    if c == 'N':
+    resp = ' '
+    while resp not in 'SN':
+        resp = str(input('Você deseja continuar. S/N')).upper()
+    if resp == 'N':
         break
-c = 0
 for i in range(0, len(idade)):
     if idade[i] >= 18:
         c += 1

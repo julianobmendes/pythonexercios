@@ -14,7 +14,7 @@ while var != 999:
         cont.append(resp)
         resp02 = 0
         while resp02 != 999:
-            resp02 = str(input('---=== Deseja continuar? S/N ===---')).upper().strip()
+            resp02 = str(input('---=== Deseja continuar? S/N ===---\n')).upper().strip()
             if resp02 == 'S':
                 resp02 = 999
                 continue

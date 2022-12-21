@@ -7,8 +7,15 @@ jogador e quantos gols ele marcou.
 O programa deverá ser capaz de mostrar a ficha do jogador,
 mesmo que algum dado não tenha sido informado corretamente.
 """
-def ficha(nome='<Desconhecido>', gols=0):
-    print(f'O jogador {nome} fez {gols} gols no campeonato.')
+
+
+def ficha(nom='<Desconhecido>', gol=0):
+    """
+
+    :param gol: quntidade de gols no campionato
+    :type nom: nome do jogador
+    """
+    print(f'O jogador {nom} fez {gol} gols no campeonato.')
 
 
 nome = str(input('Qual o nome: '))
@@ -18,6 +25,6 @@ if gols.isnumeric():
 else:
     gols = 0
 if nome.strip() == '':
-    ficha(gols=gols)
+    ficha(gol=gols)
 else:
     ficha(nome, gols)
