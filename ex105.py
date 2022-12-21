@@ -14,3 +14,14 @@ dicionário com as seguintes informações:
 Adicione também as docstrings dessa função para
 consulta pelo desenvolvedor.
 """
+def notas(**num, sit=False):
+    """
+
+    :param num:
+    :param sit:
+    :return:
+    """
+    print(f'A maior nota foi: {max(num)}')
+    print(f'A menor nota foi: {min(num)}')
+    print(f'A média da turma: {sum(num) / len(num)}')
+    print(f'Situação: {}')
