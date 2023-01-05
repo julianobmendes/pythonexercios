@@ -21,8 +21,8 @@ while n != 0:
         ultimo = (primeiro + (n-1)*razao) + 1
         for var in range(primeiro, ultimo, razao):
             if var != ultimo-1:
-                print('{} ➜ '.format(var), end="")
+                print(f'{var} ➜ ', end="")
             else:
-                print('{}. '.format(var), end="")
+                print(f'{var}. ', end="")
         print('\n')
 print('Fim do programa')
