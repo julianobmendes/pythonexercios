@@ -13,7 +13,7 @@ def fatorial(num02, show=False):
     """
 
     :param num02: recebe o número para calcular o fatorial
-    :param show: mostra o calculo do fatorial
+    :param show: mostra a formula do calculo do fatorial
     :return: sem retorno
     by Juliano Boaventura Mendes
     """
