@@ -12,7 +12,7 @@ mesmo que algum dado não tenha sido informado corretamente.
 def ficha(nom='<Desconhecido>', gol=0):
     """
 
-    :param gol: quntidade de gols no campionato
+    :param gol: quantidade de gols no campionato
     :type nom: nome do jogador
     by Juliano Boaventura Mendes
     """
