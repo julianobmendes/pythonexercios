@@ -9,7 +9,7 @@ Ex: n = leiaInt(‘Digite um n: ‘)
 """
 def leiaInt(msg):
     """
-    obs. le em str e transforma em int
+    obs. lê em str e transforma em int
     :param msg: número a ser verificado
     :return: valor númerico altera para int
     by Juliano Boaventura Mendes
