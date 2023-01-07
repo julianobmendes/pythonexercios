@@ -18,7 +18,7 @@ def fatorial(num02, show=False):
     by Juliano Boaventura Mendes
     """
     num01 = num02
-    print(f'fatorial de {num01}! = {num02}' if show == True else f'fatorial de {num01}!', end="")
+    print(f'fatorial de {num01}! = {num02}' if show else f'fatorial de {num01}!', end="")
     while num02 != 1:
         num02 -= 1
         num01 *= num02
