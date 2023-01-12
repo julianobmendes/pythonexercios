@@ -14,12 +14,27 @@ consulta pelo desenvolvedor.
 """
 def notas(* num, sit=False):
     """
-    :param num:
-    :param sit:
-    :return:
+    -> Função para analizar a situação da turma.
+    :param num: recebe varias notas da turma.
+    :param sit: Valor opcional que mostra como está a situação da turma.
+    :return: Um dicionário com uma analize da turma.
     """
-    lista = {'total': len(num),'maior'max(num), 'menor': min(num), 'media': sum(num) / len(num)}
-    print(lista)
+    lista = dict()
+    lista['total'] = len(num)
+    lista['maior'] = max(num)
+    lista['menor'] = min(num)
+    lista['média'] = sum(num) / len(num)
+    if sit:
+        if lista['média'] >= 7:
+            lista['situação'] = 'BOA'
+        elif lista['média'] >= 5:
+            lista['situação'] = 'RAZOÁVEL'
+        else:
+            lista['situação'] = 'RUIM'
+    return lista
     
     
-notas(5, 6, 5.5, 4)
+# Programa Principal
+resp = notas(7, 6, 5.5, 1, sit=True)
+print(resp)
+help(notas)
