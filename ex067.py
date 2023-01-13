@@ -11,7 +11,7 @@ while True:
     var = int(input('Digite um número:'))
     if var <= 0:
         break
-    print(f'A Tabuada para o numero {var} é:\n')
+    print(f'A Tabuada para o número {var} é:\n')
     for c in range(1, 11):
         print(f'{var} x {c:2} = {c*var:3}')
 print('fim do programa!!')
