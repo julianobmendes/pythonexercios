@@ -9,7 +9,7 @@ from random import randint
 cont = 0
 winner = ['Par', 'Ímpar']
 print('Vamos jogar par ou ímpar!\n[ 1 ] - Ímpar\n[ 2 ] - Par')
-while cont != 999:
+while True:
     num = int(input('Escolha sua sorte: '))
     comp = randint(1, 2)
     resp = (comp + num) % 2
