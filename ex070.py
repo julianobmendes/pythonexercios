@@ -3,9 +3,9 @@
 """
 Crie um programa que leia o nome e o preço de vários produtos.
 O programa deverá perguntar se o usuário vai continuar ou não. No final, mostre:
-A) qual é o total gasto na compra.
-B) quantos produtos custam mais de R$1000.
-C) qual é o nome do produto mais barato.
+A) Qual é o total gasto na compra.
+B) Quantos produtos custam mais de R$1000.
+C) Qual é o nome do produto mais barato.
 """
 prod = []
 preco = []
@@ -30,4 +30,3 @@ while True:
 print('Você teve um tota de gasto de R$ {:.2f}'.format(sum(preco)))
 print('Dos produtos {} custaram mais de R$ 1000,00'.format(p_maior))
 print('E o produto mais barato foi {}, que custou R$ {:.2f}'.format(p_menor[0], p_menor[1]))
-print('fim programa!')
