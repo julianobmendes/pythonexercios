@@ -12,6 +12,8 @@ dicionário com as seguintes informações:
 Adicione também as docstrings dessa função para
 consulta pelo desenvolvedor.
 """
+
+
 def notas(* num, sit=False):
     """
     -> Função para analizar a situação da turma.
