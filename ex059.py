@@ -9,7 +9,7 @@ num01 = num02 = result = control = 0
 num01 = int(input('Digite o 1º número: '))
 num02 = int(input('Digite o 2º número: '))
 while control != 'sair':
-    print('---=== Menu ===---')
+    print('--=== Menu ===--')
     print('[ 1 ] - Somar')
     print('[ 2 ] - Multiplicar')
     print('[ 3 ] - Maior')
