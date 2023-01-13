@@ -7,12 +7,11 @@ que é a condição de parada. No final, mostre quantos números
 foram digitados e qual foi a soma entre eles (desconsiderando o flag).
 """
 cont = []
-var = resp02 = 0
+var = 0
 while var != 999:
     resp = int(input('Digite um número: '))
     if resp != 999:
         cont.append(resp)
-        resp02 = 0
     if resp == 999:
         break
 print('')
