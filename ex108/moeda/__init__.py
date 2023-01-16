@@ -38,3 +38,12 @@ def metade(num):
     """
     resp = num / 2
     return resp
+
+
+def moeda(num):
+    """
+    -> Função para formatar em valor monetario.
+    
+    """
+    resp = f'{num:.2f}'
+    return resp
