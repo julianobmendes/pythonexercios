@@ -3,7 +3,8 @@ def aumentar(num, porc):
     -> Função de soma porcentagem ao valor.
     :param num: valor a ser aumentado.
     :param porc: porcentagem a ser aumentada no valor.
-    :return: 'resp' = recebe a soma entre 'num' e 'porc'
+    :param resp: recebe a soma entre 'num' e 'porc'
+    :return: 'resp': resposta
     """
     resp = (porc * num) / 100
     return num + resp
@@ -12,9 +13,10 @@ def aumentar(num, porc):
 def diminuir(num, porc):
     """
     -> Função de retirar porcentagem ao valor.
-    :param num: valor a ser diminuido.
+    :param num: valor a ser diminuído.
     :param porc: porcentagem a ser retirada no valor.
-    :return: 'resp' = recebe 'num' menos 'porc'
+    :param resp: 'resp' = recebe 'num' menos 'porc'
+    :return: 'resp': resposta
     """
     resp = (porc * num) / 100
     return num - resp
@@ -24,7 +26,8 @@ def dobro(num):
     """
     -> Função para dobra o valor.
     :param num: recebe o valor a ser somado.
-    :return: 'num' multiplicada por ele mesmo.
+    :param resp: 'num' multiplicada por ele mesmo.
+    :return: 'resp': resposta
     """
     resp = num + num
     return resp
@@ -34,7 +37,8 @@ def metade(num):
     """
     -> Função para dividir um valor.
     :param num: recebe o valor a ser dividido.
-    :return: 'num' dividido por dois
+    :param resp: 'num' dividido por dois
+    :return: 'resp': resposta
     """
     resp = num / 2
     return resp
@@ -42,8 +46,10 @@ def metade(num):
 
 def moeda(num):
     """
-    -> Função para formatar em valor monetario.
-    
+    -> Função para formatar em valor monetário.
+    :param num: recebe o número a ser formatado.
+    :param resp: formata 'num' em monetário com duas casas decimais
+    :return: 'resp': resposta
     """
-    resp = f'{num:.2f}'
+    resp = f'R$ {num:.2f}'
     return resp
