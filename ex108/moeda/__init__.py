@@ -6,8 +6,8 @@ def aumentar(num, porc):
     :param resp: recebe a soma entre 'num' e 'porc'
     :return: 'resp': resposta
     """
-    resp = (porc * num) / 100
-    return num + resp
+    resp = num + ((porc * num) / 100)
+    return num
 
 
 def diminuir(num, porc):
@@ -18,8 +18,8 @@ def diminuir(num, porc):
     :param resp: 'resp' = recebe 'num' menos 'porc'
     :return: 'resp': resposta
     """
-    resp = (porc * num) / 100
-    return num - resp
+    resp = num - ((porc * num) / 100)
+    return num
 
 
 def dobro(num):
