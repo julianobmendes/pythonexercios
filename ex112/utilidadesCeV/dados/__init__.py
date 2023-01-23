@@ -1,8 +1,10 @@
-def leiaInt(msg):
+from ex112.utilidadesCeV import moeda
+
+def leiaDinheiro(msg):
     """
     obs. lê em str e transforma em int
     :param msg: número a ser verificado
-    :return: valor númerico altera para int
+    :return: valor alterado para contábil.
     by Juliano Boaventura Mendes
     """
     ok = False
@@ -16,4 +18,6 @@ def leiaInt(msg):
             print('\033[0;31m ERRO!!! Digite um número inteiro válido.\033[m')
         if ok:
             break
-    return valor
+    return moeda.moeda(valor)
+    
+    
